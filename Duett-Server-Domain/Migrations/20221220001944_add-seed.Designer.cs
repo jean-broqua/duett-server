@@ -3,6 +3,7 @@ using System;
 using Duett_Server_Domain.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DuettServerDomain.Migrations
 {
     [DbContext(typeof(ItemContext))]
-    partial class ItemContextModelSnapshot : ModelSnapshot
+    [Migration("20221220001944_add-seed")]
+    partial class addseed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.1");
@@ -41,42 +44,42 @@ namespace DuettServerDomain.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("49fe3d00-d7b8-401e-9b9a-f2a31bb1d1cb"),
+                            Id = new Guid("bc78a37d-838a-47b9-8f6c-8f824c97aebf"),
                             AValue = 15,
                             BValue = 25,
                             Description = "Banana"
                         },
                         new
                         {
-                            Id = new Guid("bd7308c5-f486-4d62-b291-24bb27892331"),
+                            Id = new Guid("cbb379f6-dad9-4730-b526-092028bf6c29"),
                             AValue = 8,
                             BValue = 12,
-                            Description = "Pêra"
+                            Description = "Pera"
                         },
                         new
                         {
-                            Id = new Guid("7a697737-afb8-45c8-81ed-7f761ca6e270"),
+                            Id = new Guid("2956395b-8f6a-4e06-8472-d70ad184e815"),
                             AValue = 35,
                             BValue = 10,
                             Description = "Abacaxi"
                         },
                         new
                         {
-                            Id = new Guid("36923066-5050-4a24-ba89-bc663fe9a722"),
+                            Id = new Guid("ce97032e-e752-4924-9bae-3e07cd833115"),
                             AValue = 30,
                             BValue = 14,
-                            Description = "Maçã"
+                            Description = "Maça"
                         },
                         new
                         {
-                            Id = new Guid("c22e1cf5-8dc3-42b4-bdef-2aff5b8e59b1"),
+                            Id = new Guid("0837b971-8874-41da-a3e0-29d4ab98f34a"),
                             AValue = 17,
                             BValue = 73,
                             Description = "Uva"
                         },
                         new
                         {
-                            Id = new Guid("386396c0-1f10-46c7-88a7-c6eb771078d4"),
+                            Id = new Guid("ca62e688-cf16-4f32-ac3c-0a5d652d5e5f"),
                             AValue = 8,
                             BValue = 1,
                             Description = "Melancia"

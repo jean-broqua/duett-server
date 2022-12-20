@@ -18,6 +18,14 @@ namespace Duett_Server_Domain.Data
             modelBuilder.Entity<ListItem>()
                 .Property(x => x.Id)
                 .HasColumnName("id");
+
+            modelBuilder.Entity<ListItem>().HasData(
+                    new ListItem("Banana", 15, 25),
+                    new ListItem("Pêra", 8, 12),
+                    new ListItem("Abacaxi", 35, 10),
+                    new ListItem("Maçã", 30, 14),
+                    new ListItem("Uva", 17, 73),
+                    new ListItem("Melancia", 8, 1));
         }
     }
 }
