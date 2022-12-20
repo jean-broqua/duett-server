@@ -39,4 +39,4 @@ jobs:
           app-name: 'Duett-API'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1875BB3BFC854F65821612C073CC3E45 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CA348A4C393A496FB797FE20B8F3A10D }}
