@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<ItemContext>(options =>
-            options.UseSqlite(builder.Configuration.GetConnectionString("ItemContext")));
+            options.UseSqlite($"Data Source={builder.Environment.ContentRootPath}/data.db"));
 builder.Services.AddTransient<IListItemRepository, ListItemRepository>();
 builder.Services.AddTransient<IDTOMapper<ListItem, ListItemDTO>, ListItemDTOMapper>();
 

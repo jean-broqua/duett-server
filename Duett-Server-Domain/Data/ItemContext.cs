@@ -6,7 +6,11 @@ namespace Duett_Server_Domain.Data
 {
     public class ItemContext : DbContext
     {
-        public ItemContext(DbContextOptions<ItemContext> options) : base(options) { }
+        public ItemContext(DbContextOptions<ItemContext> options) : base(options) 
+        { 
+            Database.EnsureCreated();
+        }
+
         public DbSet<ListItem> ListItems { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

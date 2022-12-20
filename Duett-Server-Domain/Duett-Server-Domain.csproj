@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Duett_Server_Domain</RootNamespace>
+    <UserSecretsId>b502a52f-b53d-47da-bf99-a7fdd3d52ba9</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
