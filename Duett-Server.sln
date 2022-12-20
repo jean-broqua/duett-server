@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duett-Server-Domain", "Duett-Server-Domain\Duett-Server-Domain.csproj", "{7B9F6D96-BED1-457D-9A65-1F263C8F42FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duett-Server-Tests", "Duett-Server-Tests\Duett-Server-Tests.csproj", "{E2D2D878-0903-47B8-8BA4-6F0B0CC6D387}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B9F6D96-BED1-457D-9A65-1F263C8F42FF} = {7B9F6D96-BED1-457D-9A65-1F263C8F42FF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B9F6D96-BED1-457D-9A65-1F263C8F42FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B9F6D96-BED1-457D-9A65-1F263C8F42FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B9F6D96-BED1-457D-9A65-1F263C8F42FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B9F6D96-BED1-457D-9A65-1F263C8F42FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2D2D878-0903-47B8-8BA4-6F0B0CC6D387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2D2D878-0903-47B8-8BA4-6F0B0CC6D387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2D2D878-0903-47B8-8BA4-6F0B0CC6D387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2D2D878-0903-47B8-8BA4-6F0B0CC6D387}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59DABE7A-B4D3-455C-A80E-8CF96F06A2CF}
+	EndGlobalSection
+EndGlobal
